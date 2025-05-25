@@ -1,6 +1,7 @@
 import pygame
 from network import Network
 import pickle
+from server import ip
 
 pygame.font.init()
 
@@ -163,8 +164,6 @@ def menu_screen():
 
     main()
 
-
-ip = input("ip를 입력하세요: ")
 
 while True:
     menu_screen()
