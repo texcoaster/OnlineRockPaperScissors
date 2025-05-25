@@ -88,7 +88,7 @@ btns = [Button("Rock", 50, 500, (0, 0, 0)), Button("Scissors", 250, 500, (255, 0
 def main():
     run = True
     clock = pygame.time.Clock()
-    n = Network()
+    n = Network(ip)
     player = int(n.getP())
     print("You are player", player)
 
@@ -163,6 +163,8 @@ def menu_screen():
 
     main()
 
+
+ip = input("ip를 입력하세요: ")
 
 while True:
     menu_screen()

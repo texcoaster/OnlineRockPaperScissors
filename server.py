@@ -3,7 +3,9 @@ from _thread import *
 import pickle
 from game import Game
 
-server = "192.168.219.128"
+ip = input("ip를 입력하세요: ")
+
+server = ip
 port = 5555
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
